@@ -12,9 +12,9 @@ const Filters = ({ onFilterChange }) => {
 
 
   return (
-    <div className='filters mb-4 '>
-        <input type="date" onChange={handleDateChange} className='mr-2 p-2 border rounded' />
-        <select onChange={handleTypeChange} className='p-2 border rounded '>
+    <div className='filters mb-4 p-2 max-w-full'>
+        <input type="date" onChange={handleDateChange} className=' mb-2 md:mb-0 md:mr-2 p-2 border rounded w-full md:w-auto' />
+        <select onChange={handleTypeChange} className='p-2 border rounded w-full md:w-auto'>
             <option value=''>All Types</option>
             <option value='Yoga'>Yoga</option>
             <option value='Meditation'>Meditation</option>
